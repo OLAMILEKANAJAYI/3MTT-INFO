@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: skyblue; /* Sets the background color to sky blue */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#greeting {
+  margin-bottom: 20px; /* Adds space between the greeting and the profile picture */
+  font-size: 20px; 
+  color: #333; /* Adjust the color as needed, especially for dark theme */
+}
+
+#profilePic {
+  max-width: 150px; /* Adjusts the size of the image */
+  border-radius: 50%; /* Makes the image round */
+  margin-bottom: 20px; /* Adds space between the image and the text */
+}
+
+.profile > h1, .profile > h2, .profile > p {
+  width: 80%; /* Controls the width of the text to not fill the page */
+  max-width: 600px; /* Optional: Prevents text from becoming too wide on large screens */
+  margin: 0 auto 10px; /* Centers text blocks and adds space between them */
+}
+
+#themeSwitcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme #profilePic {
+  border: 4px solid #fff; /* Makes the image stand out in dark mode */
+}
+
+.dark-theme #greeting {
+  color: #fff; /* Ensures greeting text is visible in dark mode */
+}
+/* Existing styles remain unchanged */
+
+.contact-info, .skills {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9; /* Light background for distinction */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.contact-info h3, .skills h3 {
+  margin-top: 0;
+}
+
+.skills ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px; /* Space between skills */
+}
+
+/* You can add more styles as needed */
